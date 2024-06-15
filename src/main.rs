@@ -1,5 +1,9 @@
-use crossterm::event::read;
+use crossterm::event::{Event, read};
 
-fn main() {
-    println!("Hello, world!");
+fn main() -> crossterm::Result<()> {
+    loop {
+        match read()? {
+            Event::Key() =>
+        }
+    }
 }
